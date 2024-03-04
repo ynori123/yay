@@ -32,4 +32,9 @@ class Args
   def calc(str, num, len = num)
     [str.to_s * num] * len
   end
+
+  public
+  def count_object(array: [], keyword:String)
+    array.count(keyword)
+  end
 end
