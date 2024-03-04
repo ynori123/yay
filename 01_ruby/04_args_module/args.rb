@@ -37,4 +37,19 @@ class Args
   def count_object(array: [], keyword:String)
     array.count(keyword)
   end
+
+  public
+  def configure(benri:, sugoi:, **kwargs)
+    puts format("Configure '%s' as '%s'", "benri", benri)
+    puts format("Configure '%s' as '%s'", "sugoi", sugoi)
+    trimed_kwargs = {}
+    kwargs.map{ |key, value|
+      if key.to_s.match(/\Ac_/) then
+        trimed_kwargs[key.to_s.sub(/\Ac_/, '')] = value
+      end
+    }
+    trimed_kwargs.sort.each do |item|
+      puts format("Configure '%s' as '%s'", item[0], item[1])
+    end
+  end
 end
