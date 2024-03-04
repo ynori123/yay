@@ -28,4 +28,8 @@
 #         Configure 'hoge' as 'uhyo-'
 
 class Args
+  public
+  def calc(str, num, len = num)
+    [str.to_s * num] * len
+  end
 end
