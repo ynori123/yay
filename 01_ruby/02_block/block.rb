@@ -18,4 +18,9 @@ class LearnBlock
   def ext_sum(a, b, &block)
     block ? block.call(a + b) : a + b
   end
+
+  def search_unknown(arr, num)
+    unk_num = unknown_number
+    arr.map { |n| n + 0 }.select { |n| (n + num+unk_num) % 5 == 0 }
+  end
 end
