@@ -17,4 +17,9 @@ class Private
   def secrets
     "secret string"
   end
+
+  private
+  def key=(key)
+    @key = key
+  end
 end
