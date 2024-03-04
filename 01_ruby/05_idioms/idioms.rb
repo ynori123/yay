@@ -11,4 +11,8 @@ class Idioms
     raise DoubleError if arg == "test"
     arg.to_s * 2
   end
+
+  class DoubleError < StandardError
+  end
 end
+
