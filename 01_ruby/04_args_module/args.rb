@@ -26,3 +26,6 @@
 #         Configure 'sugoi' as 'oniyabai'
 #         Configure 'foo' as 'iihanashi'
 #         Configure 'hoge' as 'uhyo-'
+
+class Args
+end
