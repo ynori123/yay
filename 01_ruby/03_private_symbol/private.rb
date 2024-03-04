@@ -22,4 +22,13 @@ class Private
   def key=(key)
     @key = key
   end
+
+  public
+  def string_key=(key)
+    if key.is_a?(String) then
+      self.key=(key)
+    else
+      self.key=(key.to_s)
+    end
+  end
 end
