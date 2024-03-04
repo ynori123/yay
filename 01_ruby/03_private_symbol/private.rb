@@ -13,4 +13,8 @@
 # `string_key=` は引数を一つとり、引数がStringのオブジェクトであればそのまま、そうでなければ `to_s` で文字列化して、 `key=` メソッドにその内容を渡します
 
 class Private
+  private
+  def secrets
+    "secret string"
+  end
 end
